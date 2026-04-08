@@ -1,0 +1,13 @@
+print("=== Kaboom 1 ===")
+print("Access to alchemy/grimoire/dark_spellbook.py directly")
+print("Test import now - THIS WILL RAISE AN UNCAUGHT EXCEPTION")
+from alchemy.grimoire.dark_spellbook import dark_spell_record  # noqa: E402
+
+
+def main() -> None:
+    result = dark_spell_record('Avakadabra', 'Bats and arsenic')
+    print(f"Testing record dark spell: {result}")
+
+
+if __name__ == "__main__":
+    main()
